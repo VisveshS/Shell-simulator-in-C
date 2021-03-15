@@ -1,0 +1,25 @@
+char *input(void);
+char *compress(char *line);
+char **parse(char *superstring,char delimiter,int shrink);
+void clrptr(char **x);
+void print(char **x);
+void prompt(void);
+void changedir(char *directory);
+void echo(char *string);
+void pwd(void);
+void ls(int show_hidden);
+void ls_long(int show_hidden);
+int pinfo(int pid);
+void LSmap(char **argument);
+void remindme(char *message,int waittime);
+void cases(char *command);
+void bgp(int pid);
+void storeBG(void);
+void addBGP(pid_t Pid);
+void Done(void);
+void printBG(void);//for testing
+void redirect(char **command);
+void Pipe(char **pieces);
+void overkill(void);
+void kjob(int a,int b);
+void FG(int pid);
